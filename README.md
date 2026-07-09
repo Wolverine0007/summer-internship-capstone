@@ -1,24 +1,49 @@
 # Capstone Project
 
-Short description: This repository holds my capstone project for the internship track. It demonstrates a working local toolchain, Conventional Commits, and an AI-assisted workflow.
+This repository contains the capstone starter for my internship track. It proves a working developer toolchain (Node.js, Git, and an editor), follows Conventional Commits, and demonstrates an AI-assisted workflow.
+
+## Quick Links
+
+- Stack and conventions: [CLAUDE.md](CLAUDE.md)
+- License: [LICENSE](LICENSE)
 
 ## Stack
 
 - Node.js (LTS)
 - Git
-- VS Code or Cursor (or Claude Code)
+- VS Code with Claude Code / Cursor
 
-## Setup
+## Setup (macOS)
 
-1. Install Node.js (LTS) and Git.
-2. Clone the repo: `git clone <your-repo-url>`
-3. Install deps (if any): `npm install`
+1. Install Homebrew (if needed):
+
+	brew --version || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+2. Install Node (LTS) and Git:
+
+	brew install node git
+
+3. Clone the repo and open it in your editor:
+
+	git clone <your-repo-url>
+	cd Capstone
+	code .  # or open with Cursor
+
+4. Install dependencies (if present):
+
+	npm install
 
 ## Contributing
 
-- Commits follow Conventional Commits v1.0.0.
-- See `CLAUDE.md` for stack and conventions.
+- Commit messages follow Conventional Commits v1.0.0 (e.g., `feat:`, `fix:`, `docs:`, `chore:`).
+- Create a branch per feature and open a PR to `main`.
 
-## License
+### Example commits
 
-This project is licensed under the MIT License. See `LICENSE`.
+- `chore: init README and .gitignore`
+- `docs: add CLAUDE.md describing stack and conventions`
+
+## AI Assistant
+
+I used an AI assistant to review and improve this README. Capture a screenshot showing Claude Code or Cursor performing a task for verification.
+
