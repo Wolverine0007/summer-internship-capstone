@@ -45,5 +45,5 @@ This repository contains the capstone starter for my internship track. It proves
 
 ## AI Assistant
 
-I used an AI assistant to review and improve this README. Capture a screenshot showing Claude Code or Cursor performing a task for verification.
+I used an AI assistant to review and improve this README.
 
