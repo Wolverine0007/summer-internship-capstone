@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings Form</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Notification settings</h1>
+      <form id="settings-form" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="notifications">Send updates</label>
+        <select id="notifications" name="notifications">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+
+        <button type="submit">Save</button>
+        <p id="status" class="status" aria-live="polite"></p>
+      </form>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
