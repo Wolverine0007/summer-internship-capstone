@@ -11,8 +11,10 @@ form.addEventListener('submit', (event) => {
 
   if (Object.keys(errors).length > 0) {
     status.textContent = Object.values(errors).join(' ');
+    status.style.color = '#b91c1c';
     return;
   }
 
   status.textContent = formatSummary(values);
+  status.style.color = '#166534';
 });

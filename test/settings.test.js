@@ -9,10 +9,15 @@ test('valid settings pass validation', () => {
 
 test('invalid email is rejected', () => {
   const result = validateSettings({ name: 'Ada', email: 'not-an-email', notifications: 'yes' });
-  assert.match(result.email, /valid address/i);
+  assert.match(result.email, /valid email/i);
 });
 
 test('summary includes the selected notification preference', () => {
   const text = formatSummary({ name: 'Ada', email: 'ada@example.com', notifications: 'no' });
-  assert.match(text, /updates no/i);
+  assert.match(text, /no updates/i);
+});
+
+test('missing notification choice is rejected', () => {
+  const result = validateSettings({ name: 'Ada', email: 'ada@example.com', notifications: '' });
+  assert.match(result.notifications, /receive updates/i);
 });
